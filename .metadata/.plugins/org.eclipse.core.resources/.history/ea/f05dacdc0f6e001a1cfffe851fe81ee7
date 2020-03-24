@@ -1,0 +1,79 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+        Main app = new Main();
+        app.Start();
+
+	}
+
+	private void Start() {
+	    int opcao = 0;
+	    
+		Scanner ler = new Scanner(System.in);
+		
+		while(opcao != 8) {
+		System.out.println("1- Cadastrar cavalo");
+		System.out.println("2 - Cadastrar girafa");
+		System.out.println("3 - Listar cavalos");
+		System.out.println("4 - Listar girafas");
+		System.out.println("5 - Listar todos os animais");
+		System.out.println("6 - Remover um animal por id");
+		System.out.println("7 - Exibir a quantidade de animais cadastrados por tipo");
+		System.out.println("8 - Sair");
+		System.out.println("");
+		System.out.println("Selecione a opcao:");
+		
+		opcao = ler.nextInt();
+		
+		switch(opcao) {
+		case 1:
+			System.out.println("Nome:");
+			String nomeDoCavalo = ler.next();
+			System.out.println("id: ");
+			int idCavalo = ler.nextInt();
+			CadastrarCavalo(idCavalo, nomeDoCavalo);
+            System.out.println("Cavalo cadastrado!");
+	    break;
+		case 2:
+			
+		break;
+		case 3:
+			
+		break;
+		case 4:
+			
+		break;
+		case 5:
+			
+		break;
+		case 6:
+			
+		break;
+		case 7:
+			
+        break;
+		case 8:
+			System.out.println("Saindo...");
+        break;
+        
+	}
+	 }
+      }
+	
+	List<Animais> listaCavalo = new ArrayList<Animais>();
+	List<Animais> listaGirafa = new ArrayList<Animais>();
+	List<Animais> listaAnimais = new ArrayList<Animais>(listaCavalo.size()+ listaGirafa.size());
+	
+	private void CadastrarCavalo(int id, String nome) {
+        Cavalo cavalo = new Cavalo(id, nome);
+		
+		listaCavalo.add(cavalo);
+
+	}
+	
+}

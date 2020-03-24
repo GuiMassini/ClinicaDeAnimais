@@ -1,9 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 
-public class Girafa {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Girafa extends Animais {
+	
+		public  Girafa(int id, String nome) {
+			
+			setNome(nome);
+			setId(id);
+			List<Girafa> listaGirafa = new ArrayList<Girafa>();
+			
 	}
 
 }

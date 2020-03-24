@@ -1,0 +1,9 @@
+
+public class Girafa extends Animais {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

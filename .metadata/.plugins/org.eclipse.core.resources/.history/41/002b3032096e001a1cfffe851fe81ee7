@@ -1,0 +1,12 @@
+
+public class Animais {
+
+	public static void main(String[] args) {
+
+        Main app = new Main();
+        app.Start();
+
+	}
+
+
+}

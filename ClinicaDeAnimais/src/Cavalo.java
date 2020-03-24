@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
 
-public class Cavalo {
+public class Cavalo extends Animais {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public Cavalo(int id, String nome) {		
+		
+		setNome(nome);
+		setId(id);
+		List<Cavalo> listaCavalo = new ArrayList<Cavalo>();
 	}
 
 }
