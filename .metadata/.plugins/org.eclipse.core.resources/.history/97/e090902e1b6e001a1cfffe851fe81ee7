@@ -122,7 +122,7 @@ private void ListarCavalos() {
 		}
 		
 	}
-
+	
 	private void Remover(int numero) {
 		 listaAnimais.removeIf( id -> id.equals(numero));
 		

@@ -117,14 +117,17 @@ private void ListarCavalos() {
 		listaAnimais.addAll(listaCavalo);
 		listaAnimais.addAll(listaGirafa);
 		
-		for (Animais animal : listaAnimais) {
-			System.out.println("ID_DO_ANIMAL: " + animal.getId() + " | " + "NOME_DO_ANIMAL: " + animal.getNome());
+	}
+	
+	private void Remover(int numero) {
+		for (Animais cavalo : listaCavalo) {
+			if(cavalo.getId() == numero) listaCavalo.remove(numero);
 		}
 		
-	}
-
-	private void Remover(int numero) {
-		 listaAnimais.removeIf( id -> id.equals(numero));
+		
+		for (Animais girafa : listaGirafa) {
+				if(girafa.getId() == numero) listaGirafa.remove(numero);
+		}
 		
 	}
 	

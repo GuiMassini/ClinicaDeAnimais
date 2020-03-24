@@ -59,10 +59,7 @@ public class Main {
 			ListarAnimais();
 		break;
 		case 6:
-			System.out.println("Digite o id do animal a ser removido: ");
-			int numero = ler.nextInt();
-			Remover(numero);
-			System.out.println("Removido com sucesso!");
+			
 		break;
 		case 7:
 			QuantidadeElementos();
@@ -117,24 +114,11 @@ private void ListarCavalos() {
 		listaAnimais.addAll(listaCavalo);
 		listaAnimais.addAll(listaGirafa);
 		
-		for (Animais animal : listaAnimais) {
-			System.out.println("ID_DO_ANIMAL: " + animal.getId() + " | " + "NOME_DO_ANIMAL: " + animal.getNome());
-		}
-		
-	}
-
-	private void Remover(int numero) {
-		 listaAnimais.removeIf( id -> id.equals(numero));
-		
 	}
 	
 	private void QuantidadeElementos() {
-		System.out.println("Número de cavalos cadastrados: " + listaCavalo.size());
-		ListarCavalos();
-		System.out.println("Número de girafas cadastradas: " + listaGirafa.size());
-		ListarGirafas();
-		System.out.println("Total de animais cadastradas: " + listaAnimais.size());
-		
+		System.out.println("O número de cavalos cadastrados são: " + listaCavalo.size());
+		System.out.println("O número de girafas cadastrados são: " + listaGirafa.size());
 	}
 	
 }

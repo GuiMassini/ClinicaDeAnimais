@@ -61,7 +61,8 @@ public class Main {
 		case 6:
 			System.out.println("Digite o id do animal a ser removido: ");
 			int numero = ler.nextInt();
-			Remover(numero);
+			//Remover(numero);
+			listaAnimais.remove(numero);
 			System.out.println("Removido com sucesso!");
 		break;
 		case 7:
@@ -122,11 +123,12 @@ private void ListarCavalos() {
 		}
 		
 	}
-
+	/*
 	private void Remover(int numero) {
-		 listaAnimais.removeIf( id -> id.equals(numero));
+		 listaAnimais.removeIf( name -> name.equals(numero));
 		
 	}
+	*/
 	
 	private void QuantidadeElementos() {
 		System.out.println("Número de cavalos cadastrados: " + listaCavalo.size());
