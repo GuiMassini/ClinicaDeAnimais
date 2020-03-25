@@ -62,6 +62,7 @@ public class Main {
 			System.out.println("Digite o id do animal a ser removido: ");
 			int numero = ler.nextInt();
 			Remover(numero);
+			System.out.println("Removido com sucesso!");
 		break;
 		case 7:
 			QuantidadeElementos();
@@ -94,7 +95,6 @@ public class Main {
         
 		listaGirafa.add(girafa);
 		
-		
 	}
 	
 private void ListarCavalos() {
@@ -113,10 +113,9 @@ private void ListarCavalos() {
 	}
 	
 	private void ListarAnimais() {
-		listaAnimais.clear();
+		
 		listaAnimais.addAll(listaCavalo);
 		listaAnimais.addAll(listaGirafa);
-		
 		
 		for (Animais animal : listaAnimais) {
 			System.out.println("ID_DO_ANIMAL: " + animal.getId() + " | " + "NOME_DO_ANIMAL: " + animal.getNome());
@@ -125,20 +124,21 @@ private void ListarCavalos() {
 	}
 
 	private void Remover(int numero) {
-		for (Animais cavalo : listaCavalo) {
-            if (cavalo.equals(numero)) {
-                listaCavalo.remove(numero);
-                System.out.println(cavalo + " Removido com sucesso!");
-            }
-        }
-		for (Animais girafa : listaGirafa) {
-            if (girafa.equals(numero)) {
-                listaGirafa.remove(numero);
-                System.out.println(girafa + " Removido com sucesso!");
-            }
-        }
-		
-		//tentei de várias maneiras remover, mas sem sucesso.
+		 for(int i = 0; i < listaAnimais.size(); i++)
+		    {
+		        Animais p = listaAnimais.get(i);
+
+		        if(p.getNome().equals("Pedro"))
+		        {
+		            // Encontrou animal cadastrado.
+
+		            // Remove.
+		            listaAnimais.remove(p);
+
+		            // Sai do loop.
+		            break;
+		        }
+		    }
 		
 	}
 	

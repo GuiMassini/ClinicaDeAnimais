@@ -62,6 +62,7 @@ public class Main {
 			System.out.println("Digite o id do animal a ser removido: ");
 			int numero = ler.nextInt();
 			Remover(numero);
+			System.out.println("Removido com sucesso!");
 		break;
 		case 7:
 			QuantidadeElementos();
@@ -125,20 +126,12 @@ private void ListarCavalos() {
 	}
 
 	private void Remover(int numero) {
-		for (Animais cavalo : listaCavalo) {
-            if (cavalo.equals(numero)) {
-                listaCavalo.remove(numero);
-                System.out.println(cavalo + " Removido com sucesso!");
+		for (Animais animais : listaAnimais) {
+            if (animais.equals(numero)) {
+                listaAnimais.remove(numero);
+                System.out.println(animais + " removed");
             }
         }
-		for (Animais girafa : listaGirafa) {
-            if (girafa.equals(numero)) {
-                listaGirafa.remove(numero);
-                System.out.println(girafa + " Removido com sucesso!");
-            }
-        }
-		
-		//tentei de várias maneiras remover, mas sem sucesso.
 		
 	}
 	

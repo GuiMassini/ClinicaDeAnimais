@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class Girafa extends Animais {
 	
@@ -6,7 +7,7 @@ public class Girafa extends Animais {
 			
 			setNome(nome);
 			setId(id);
-	
+			List<Girafa> listaGirafa = new ArrayList<Girafa>();
 			
 	}
 

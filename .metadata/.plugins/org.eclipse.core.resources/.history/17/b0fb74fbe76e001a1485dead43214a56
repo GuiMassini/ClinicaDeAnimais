@@ -138,8 +138,6 @@ private void ListarCavalos() {
             }
         }
 		
-		//tentei de várias maneiras remover, mas sem sucesso.
-		
 	}
 	
 	private void QuantidadeElementos() {
